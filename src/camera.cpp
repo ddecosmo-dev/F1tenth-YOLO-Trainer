@@ -1,5 +1,4 @@
 #include "lab_08.h"
-#include <iostream>
 
 class CameraRead{
     private:
