@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-//Camera.cpp
+//Camera.cpp -------------------------------------------------
 class CameraRead {
 private:
     cv::VideoCapture cap;
@@ -14,7 +14,7 @@ public:
     bool GetFrame(cv::Mat &frame);
 };
 
-//distance.cpp
+//distance.cpp-------------------------------------------------
 //initial calibration
 void onMouse(int event, int x, int y, int flags, void* userdata);
 std::vector<cv::Point3f> createIdealGrid(const cv::Size& patternSize, float squareSize);
@@ -28,3 +28,10 @@ cv::Point2f getDistance(cv::Point2f pixel, cv::Mat K, double H);
 
 //read XML helper! can be done once 
 cv::Mat readCameraMatrix(std::string matrix_path);
+
+// Lane.cpp --------------------------------------------------
+
+//single function, lane detector
+cv::Mat laneDetector(const cv::Mat* inputImgPtr);
+
+// Detection.cpp --------------------------------------------------
