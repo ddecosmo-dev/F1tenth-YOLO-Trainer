@@ -45,6 +45,6 @@ int main() {
         double xDistance = distance[0];
         double yDistance = distance[1];
 
-        cout:: << "Distance from Car is x: " << xDistance << " y: " << yDistance <std::endl; 
+        cout:: << "Distance from Car is x: " << xDistance << ", y: " << yDistance <std::endl; 
     }
 }
